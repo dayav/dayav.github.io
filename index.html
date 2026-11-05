@@ -1,13 +1,72 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Project: Personal webpage</title>
-  </head>
-  <body>
-    <h1>My first project</h1>
-    
-    <p> THANK YOU</p>
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>David Yavo</title>
+<meta name="description" content="David Yavo , applied ML engineer. Synthetic tabular data, LLM agent evaluation, 8+ years production software.">
+<style>
+  :root{
+    --bg:#f6f5f2; --fg:#15161a; --muted:#5d6067; --card:#ffffff; --line:#e3e1dc; --accent:#1f4fd6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#111214; --fg:#f2f2f0; --muted:#9a9ca3; --card:#1b1c20; --line:#2a2c32; --accent:#7ea2ff; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  main{max-width:480px;margin:0 auto;padding:40px 16px 48px}
+  h1{font-size:30px;margin:0 0 4px;letter-spacing:-.01em}
+  .role{color:var(--muted);margin:0 0 14px;font-size:15px}
+  .pitch{margin:0 0 28px;font-size:16px}
+  .pitch b{font-weight:600}
+  ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+  a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;text-decoration:none;color:inherit}
+  a.card:active{transform:scale(.99)}
+  .t{font-weight:600;font-size:17px}
+  .d{color:var(--muted);font-size:14px;margin-top:3px}
+  .primary{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+  .primary .t{color:var(--accent)}
+  footer{margin-top:32px;color:var(--muted);font-size:14px}
+  footer a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<main>
+  <h1>David Yavo</h1>
+  <p class="role">Applied ML engineer · Québec → Toronto · FR / EN</p>
+  <p class="pitch">I research how to evaluate synthetic data. I built an LLM agent that runs that evaluation. <b>Then I evaluated the agent.</b> Plus 8+ years shipping production software.</p>
+
+  <ul>
+    <li><a class="card primary" href="cv.pdf">
+      <div class="t">Résumé (PDF)</div>
+      <div class="d">One page</div>
+    </a></li>
+
+    <li><a class="card" href="https://github.com/dayav/tabular-synth-eval-agent">
+      <div class="t">LLM evaluation agent</div>
+      <div class="d">Claude + native tool use, with its own eval harness : github.com/dayav/tabular-synth-eval-agent</div>
+    </a></li>
+
+    <li><a class="card" href="https://github.com/dayav/pipeline_synthetic_tabular_data">
+      <div class="t">Privacy-preserving synthetic data pipeline</div>
+      <div class="d">Master's thesis code: mode patching + HEOM-kNN privacy filter, 3 datasets</div>
+    </a></li>
+
+    <li><a class="card" href="https://arxiv.org/abs/2602.06390">
+      <div class="t">Paper : arXiv:2602.06390</div>
+      <div class="d">Generating high-quality privacy-preserving synthetic tabular data</div>
+    </a></li>
+
+    <!-- TODO: replace with your real LinkedIn URL -->
+    <li><a class="card" href="https://www.linkedin.com/in/david-yavo-8b6657112/">
+      <div class="t">LinkedIn</div>
+      <div class="d">Connect : mention where we met</div>
+    </a></li>
+  </ul>
+
+  <footer>
+    <a href="mailto:davidaureleyavo@gmail.com">davidaureleyavo@gmail.com</a> · <a href="https://github.com/dayav">github.com/dayav</a>
+  </footer>
+</main>
+</body>
 </html>
-    
